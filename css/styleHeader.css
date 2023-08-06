@@ -1,0 +1,104 @@
+/* ************ Tamaño PC ************ */
+@media (min-width:1150px){
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ************ Tamaño Mobile ************ */
+@media (min-width:481px) and (max-width:1149px){
+    .divHeader a img{
+        display: flex; /* Cambia el display para mas flexible Flex */
+        width: 100%;
+        margin-bottom: -1;
+    }
+    body{
+        width: 100%;
+    }
+
+
+
+/* Seccion de Navegacion */
+    .divHeader div{
+        float: left;
+        background-color: rgb(0, 0, 0);
+        width: 100%;
+
+    }
+    .divMovil{
+        text-align: right;
+    }
+    .divHeader div ul{
+        margin: 12px; /* Margen general */
+        text-align: center; /* Alinea la lista desordenada ul a la izquierda*/
+        font-family: Arial, Helvetica, sans-serif; /* Tipografia */
+        font-weight: bold; /* Le pone en formato de Negritas */
+    }
+    .divHeader div nav ul{
+        display: none;
+    }
+    .divHeader div ul #liLogin:hover a{
+        color: rgb(255, 0, 234);
+    }
+    .divHeader div ul #liCreate:hover a{
+        color: cyan;
+    }
+    .divHeader div ul li{
+        display:inline-block; /* Convierte en 'Bloques de Linea' */
+        list-style: none; /* Le quita el estilo de lista */
+        transition: 0.2s linear;
+    }
+    
+    .divHeader div ul li:hover{/* escala a 1.1 La lista*/
+        transform: scale(1.1);
+    }
+    .divHeader div ul li:hover a{/* escala a 1.1 La lista*/
+        transform: scale(1.1);
+        color: rgb(0, 255, 128);
+    }
+    .divHeader div ul li a{
+        color: white;
+        text-transform: uppercase;
+        text-align: left;
+        font-size: 16px;
+        text-decoration: none; /* Quita el subrayado */
+        padding: 15px; /* Hace un espaciado entre los elementos de la lista */
+        transition: .2s linear;
+    }
+    .divHeader div ul #tipoJuego:hover ul{
+        display: block;
+    }
+    .divHeader div ul #tipoJuego a:hover { 
+        transform: scale(1.1);
+        color: rgb(0, 255, 128);
+    }
+    .divHeader div ul #tipoJuego ul{
+        display: none;
+        background: rgba(0, 46, 88, 0.377);
+        position: absolute;
+        width: 540px;
+    }
+    .divHeader div ul #tipoJuego ul #list{
+        margin-left: 10px;
+    }
+    .divHeader div ul #tipoJuego ul #list a{
+        display: block;
+        color: white;
+        width: 120px;
+        padding: 15px;
+    }
+    .divHeader div ul #tipoJuego ul #list a:hover{
+        border: 1px solid rgb(0, 183, 255);
+        color: rgb(0, 255, 128);
+    }
+    /* Fin Seccion */
+}

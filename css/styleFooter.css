@@ -1,0 +1,56 @@
+/* ************ Tamaño PC ************ */
+@media (min-width:1150px){
+    
+}
+
+
+
+
+
+
+
+/* ************ Tamaño Mobile ************ */
+@media (min-width:481px) and (max-width:1149px){
+    .divFooter{
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .divInfo{
+        display: inline-block;
+    }
+    .divInfo ul li{
+        display: inline-block;
+        text-decoration: none;
+        vertical-align: top;
+        padding: 10px;
+    }
+    .divInfo ul #liInfo pre{
+        font-size: 14px;   
+    }
+    .divInfo ul #liRedes ul li:hover{
+        transform: scale(1.1);       
+    }
+    .divInfo ul #liRedes ul li:hover a{
+        transform: scale(1.1);
+        color: azure;    
+    }
+    .divInfo ul #liRedes ul div{
+        font-size: 14px;
+    }
+    .divInfo ul #liRedes ul img{
+        padding: 2px;
+        height: 25px;
+    }
+    .divInfo ul #liRedes ul li a{
+        text-decoration: none;
+        color: chartreuse;
+        height: 45px;
+        font-size: 18px;
+    }
+    .divInfo ul #liContacto pre{
+        font-size: 14px;        
+    }
+}

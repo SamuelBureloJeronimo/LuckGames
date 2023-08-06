@@ -1,0 +1,79 @@
+ /* Seccion del Cuerpo */
+.LoginSec{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 18;
+    margin-left: 25%;
+    margin-top: 10%;
+    z-index: 100;
+    margin-bottom: 40px;
+}
+.formLogin{
+    padding: 10px;
+    margin-left: 30%;
+    margin-right: 30%;
+    border: 1px solid rgb(255, 255, 255);
+    background-color: rgba(0,0,0,0.6);
+    border-radius: 20px;
+}
+.formLogin img{
+    margin-top: -50px;
+}
+.formLogin a{
+    text-decoration: none;
+    color: aqua;
+}
+.formLogin a:hover{
+    color: rgb(0, 255, 98);
+    text-transform:uppercase;
+}
+.jtxtUser{
+    transition: 0.2s;
+}
+.jtxtPass{
+    transition: 0.2s;
+}
+.jtxtUser:hover{
+    transition: 0.2s;
+    transform: scale(1.1);
+    background-color: black;
+    color: aqua;
+}
+.jtxtPass:hover{
+    transition: 0.2s;
+    transform: scale(1.1);
+    background-color: black;
+    color: aqua;
+}
+.bttonIniciar{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    background-color: white;
+    color: rgb(0, 0, 0);
+    padding: 5px;
+}
+.bttonIniciar:hover{
+    background-color: rgb(147, 255, 232);
+    cursor: pointer;
+}
+/* Fin Seccion */
+@media (min-width:481px) and (max-width:1149px){
+    body{
+        width: 100%;
+    }
+    .sec1{
+        display: none;
+    }
+    .Lobby{
+        width: 100%;
+    }
+    .trResponsive{
+        display: inline-block;
+    }
+    .LoginSec{
+        margin-left: 0%;
+        margin-top: 10%;
+        z-index: 100;
+        margin-bottom: 40px;
+    }
+}

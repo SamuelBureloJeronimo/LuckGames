@@ -1,0 +1,62 @@
+
+/* ************ Tamaño PC ************ */
+@media (min-width:1150px){
+    
+}
+
+
+
+
+
+
+
+/* ************ Tamaño Mobile ************ */
+@media (min-width:481px) and (max-width:1149px){
+    /* Seccion del Cuerpo */
+    .divBody{
+        display: inline-block;
+        background: rgba(88, 0, 84, 0.308);
+        width: 100%;
+    }
+    /* Seccion del Cuerpo */
+    .sec1{
+        display: none;
+        float: left;
+        width: 25%;
+        background-color: rgba(0, 0, 0, 0.712);
+    }
+    .sec1 hr{
+        border: 1px solid rgb(255, 255, 255);
+    }
+    .sec1 h2{
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 20px;
+        text-align: left;
+        margin: 10px;
+        color: rgb(255, 255, 255);
+    }
+    .SectionPopulares img{
+        width: 75%;
+    }
+    .SectionPopulares{
+        width: 100%;
+        height: max-content;
+        /*border: 2px solid blue;*/
+        margin-bottom: 10%;
+    }
+    .SectionPopulares p{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        color: rgb(223, 173, 173);
+    }
+
+    .SectionRecientes p{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        color: rgb(255, 255, 255);
+    }
+    .SectionRecientes img{
+        margin: 5%;
+        width: 65%;
+    }
+}

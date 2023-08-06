@@ -1,0 +1,330 @@
+*{
+    margin: 0;
+    padding: 0;
+    size: 20px;
+    box-sizing: border-box;
+}
+body{
+    background-image: url("../img/fondoDark.jpg");
+    background-size: 100%;
+    width: 1150px;
+    
+    text-align: center;
+    margin: 0 auto;
+    align-items: center;
+
+    color: white;
+}
+
+/********************************************************************     H E A D E R    ********************************************************************/
+/********************************************************************     H E A D E R    ********************************************************************/
+/********************************************************************     H E A D E R    ********************************************************************/
+/********************************************************************     H E A D E R    ********************************************************************/
+.divHeader a img{
+    display: flex; /* Cambia el display para mas flexible Flex */
+    width: 100%;
+    margin-bottom: -1;
+}
+
+/* Seccion de Navegacion */
+.divHeader nav{
+    display: inline-block;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.87);
+}/*
+.divHeader div{
+    float: right;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 50px;
+}*/
+.divHeader div ul{
+    display: inline-block;
+    float: left;
+    margin: 5px; /* Margen general */
+    text-align: left; /* Alinea la lista desordenada ul a la izquierda*/
+    font-family: Arial, Helvetica, sans-serif; /* Tipografia */
+    font-weight: bold; /* Le pone en formato de Negritas */
+    width: 65%;
+    z-index: 1000;
+}
+.divHeader .ul1 li{
+    display:inline-block; /* Convierte en 'Bloques de Linea' */
+    list-style: none; /* Le quita el estilo de lista */
+    transition: 0.2s linear;
+    margin: 5px;
+}
+.divHeader div .ul1 #list:hover{/* escala a 1.1 La lista*/
+    transform: scale(1.1);
+}
+.divHeader div .ul1 #list:hover a{/* escala a 1.1 La lista*/
+    transform: scale(1.1);
+    color: rgb(0, 255, 128);
+}
+.divHeader div .ul1 li a{
+    color: white;
+    text-transform: uppercase;
+    text-align: left;
+    font-size: 16px;
+    text-decoration: none; /* Quita el subrayado */
+    padding: 15px; /* Hace un espaciado entre los elementos de la lista */
+    transition: .2s linear;
+}
+.divHeader div .ul1 #tipoJuego .inP{
+    color: white;
+    text-transform: uppercase;
+    text-align: left;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none; /* Quita el subrayado */
+    padding: 15px; /* Hace un espaciado entre los elementos de la lista */
+    transition: .2s linear;
+    background-color: rgba(0, 255, 34, 0);
+    border: none;
+}
+.divHeader div .ul1 #tipoJuego:hover ul{
+    display: block;
+    position: absolute;
+    z-index: 1000;
+}
+.divHeader div .ul1 #tipoJuego .inP:hover { 
+    transform: scale(1.1);
+    color: rgb(0, 255, 128);
+    border: 1px solid rgb(0, 183, 255);
+}
+.divHeader div .ul1 #tipoJuego ul{
+    display: none;
+    background: rgba(0, 45, 88, 0.829);
+    width: 560px;
+}
+.divHeader div .ul1 #tipoJuego ul li{
+    margin-left: 10px;
+}
+.divHeader div .ul1 #tipoJuego ul li a:hover{
+    border: 1px solid rgb(0, 183, 255);
+    color: rgb(0, 255, 128);
+}
+.divHeader div nav .ul2{
+    float: right;
+    width: 30%;
+    padding-right: 0%;
+    text-align: right;
+}
+.divHeader div nav .ul2 li{
+    list-style: none;
+    display: inline-block;
+    margin: 5px;
+    margin-right: 15px;
+    transition: 0.2s;
+}
+
+.divHeader div nav .ul2 li a{
+    color: white;
+    text-decoration: none;
+}
+
+.divHeader div nav .ul2 li:hover{
+    transform: scale(1.1);
+}
+.divHeader div nav .ul2 li a:hover{
+    color: rgba(255, 0, 234, 0.521);
+}
+/* Fin Seccion */
+
+/********************************************************************     B O D Y    ********************************************************************/
+/********************************************************************     B O D Y    ********************************************************************/
+/********************************************************************     B O D Y    ********************************************************************/
+/********************************************************************     B O D Y    ********************************************************************/
+.divBody{
+    display: inline-block;
+    background: rgba(0, 132, 255, 0.164);
+    width: 100%;
+    margin-top: -5px;
+}
+/* Seccion del Cuerpo */
+.sec1{
+    float: left;
+    width: 25%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.712);
+}
+.sec1 hr{
+    border: 1px solid rgb(255, 255, 255);
+}
+.sec1 h2{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    text-align: left;
+    margin: 10px;
+    color: rgb(255, 255, 255);
+}
+.SectionPopulares p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: rgb(30, 255, 0);
+    width: 80%;
+}
+.SectionPopulares img{
+    width: 75%;
+    border-radius: 4px;
+}
+.SectionPopulares img:hover{
+    -webkit-box-shadow: 0px 0px 15px 5px rgba(255, 251, 0, 0.795);
+}
+.SectionPopulares{
+    width: 100%;
+    height: max-content;
+    margin-bottom: 10%;
+}
+.divRec p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: rgb(30, 255, 0);
+    width: 80%;
+}
+.divRec img{
+    margin: 5%;
+    width: 65%;
+    border-radius: 5px;
+}
+.divRec img:hover{
+    -webkit-box-shadow: 0px 0px 15px 5px rgba(94, 255, 0, 0.75);
+}
+
+.Lobby{
+    display: inline-block;
+    width: 75%;
+    height:max-content;
+}
+.Lobby table .trLobby{
+    vertical-align: top;
+}
+.Lobby table .trLobby td{
+    display: inline-block;
+    padding: 2%;
+    margin: 5px;
+    border-radius: 10px;
+    text-align: center;
+    width: 31%;
+    height: 400px;
+}
+.Lobby table .trLobby td a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(0, 255, 255);
+}
+.Lobby table .trLobby td a img{
+    border-radius: 10px;
+    transition: 0.2s;
+}
+.Lobby table .trLobby td a img:hover{
+    transform: scale(1.05);
+    -webkit-box-shadow: 0px 0px 15px 5px rgba(255, 238, 0, 0.75);
+}
+.Lobby table .trLobby td a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(0, 255, 255);
+}
+.Lobby table .trFin .trNavBotton{
+    display: inline-block;
+    border: 3px solid cyan;
+    background-color: black;
+    text-align: center;
+    border-radius: 5px;
+    padding: 0.5%;
+    margin: 3px;
+    width: 32px;
+    height: 32px;
+}
+.Lobby table .trFin .trNavBotton a{
+    color: white;
+    text-decoration: none;
+}
+/********************************************************************     F O O T E R    ********************************************************************/
+/********************************************************************     F O O T E R    ********************************************************************/
+/********************************************************************     F O O T E R    ********************************************************************/
+/********************************************************************     F O O T E R    ********************************************************************/
+.divFooter{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.divInfo ul li{
+    display: inline-block;
+    text-decoration: none;
+    vertical-align: top;
+    text-align: left;
+    padding: 10px;
+}
+.divInfo ul #liInfo pre{
+    font-size: 14px;        
+}
+
+
+.divInfo ul #liRedes ul{
+    width: 150px;        
+}
+.divInfo ul #liRedes ul li:hover{
+    transform: scale(1.1);       
+}
+.divInfo ul #liRedes ul li:hover a{
+    transform: scale(1.1);
+    color: azure;    
+}
+.divInfo ul #liRedes ul div{
+    display:contents;
+    border: 2px solid blue;
+    vertical-align:baseline;
+    text-align: center;
+    border: 2px solid rgb(166, 255, 0);
+    font-size: 14px;
+}
+.divInfo ul #liRedes ul img{
+    display: inline-block;
+    padding: 2px;
+    height: 25px;
+    vertical-align:bottom;
+}
+.divInfo ul #liRedes ul li a{
+    text-decoration: none;
+    color: chartreuse;
+    height: 45px;
+    font-size: 18px;
+}
+.divInfo ul #liContacto pre{
+    font-size: 14px;        
+}
+.trResponsive{
+    display: none;
+    width: 100%;
+    background-color: rgba(195, 0, 255, 0.24);
+}
+.trResponsive th{
+    float: left;
+    background-color: rgba(127, 178, 255, 0.6);
+}
+/****************************************************     R E S P O N S I V E    W I N D O W        *****************************************************/
+/****************************************************     R E S P O N S I V E    W I N D O W        *****************************************************/
+/****************************************************     R E S P O N S I V E    W I N D O W        *****************************************************/
+/****************************************************     R E S P O N S I V E    W I N D O W        *****************************************************/
+@media (min-width:481px) and (max-width:1149px){
+    body{
+        width: 100%;
+    }
+    .sec1{
+        display: none;
+    }
+    .Lobby{
+        width: 100%;
+    }
+    .trResponsive{
+        display: inline-block;
+    }
+}
